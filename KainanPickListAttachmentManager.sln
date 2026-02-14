@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KainanPickListAttachmentManager", "KainanPickListAttachmentManager\KainanPickListAttachmentManager.csproj", "{F17D3016-AA6C-4F51-A905-12615059CCFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F17D3016-AA6C-4F51-A905-12615059CCFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17D3016-AA6C-4F51-A905-12615059CCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17D3016-AA6C-4F51-A905-12615059CCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17D3016-AA6C-4F51-A905-12615059CCFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C4994ED-F40E-4057-8CD7-00BE8A85315F}
+	EndGlobalSection
+EndGlobal

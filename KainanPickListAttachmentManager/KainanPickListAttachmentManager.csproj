@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F17D3016-AA6C-4F51-A905-12615059CCFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KainanPickListAttachmentManager</RootNamespace>
+    <AssemblyName>KainanPickListAttachmentManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvanceSoftware.ExcelCreator.BarCode, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.BarCode.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Creator, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Creator.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Creator.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Document, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Document.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Html.Creator, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Html.Creator.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Html.Creator.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Pdf.Creator, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Pdf.Creator.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Pdf.Creator.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Shared, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Shared.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.View, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.View.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.View.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Xls.Core, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Xls.Core.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Xls.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Xlsx.Core, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Xlsx.Core.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Xlsx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvanceSoftware.ExcelCreator.Xlsx.CreatorExpress, Version=12.0.1.0, Culture=neutral, PublicKeyToken=0f22a71ae6593b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdvanceSoftware.ExcelCreator.Xlsx.CreatorExpress.12.0.1\lib\net462\AdvanceSoftware.ExcelCreator.Xlsx.CreatorExpress.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.6.0.5\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoubleSidedFormatHelper.cs" />
+    <Compile Include="MoushiokuriHelper.cs" />
+    <Compile Include="PDFoutputHelper.cs" />
+    <Compile Include="PickListHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateHelper.cs" />
+    <Compile Include="Zanzonboushi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdvanceSoftware.ExcelCreator12.License.xml" />
+    <EmbeddedResource Include="ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
